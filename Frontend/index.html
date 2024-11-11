@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshbowl</title>
+    <!--Libraries-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Main Navigation panel-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #daf0dd">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3 mx-5">
+                <a class="nav-link btn btn-primary rounded-pill custom-btn" href="#exploreHome" style="padding: 0.5rem 1.5rem; border-radius: 12px;">Home</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link btn btn-primary rounded-pill custom-btn" href="#menuSection" style="padding: 0.5rem 1.5rem; border-radius: 12px;">Menu</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link btn btn-primary rounded-pill custom-btn" href="#aboutDetails" style="padding: 0.5rem 1.5rem; border-radius: 12px;">About</a>
+              </li>
+              <li class="nav-item dropdown me-1">
+                <a class="nav-link dropdown-toggle btn btn-primary rounded-pill custom-btn" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding: 0.5rem 1.5rem; border-radius: 12px;">
+                    Recipes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#berry" style="font-family: 'Poppins';">Berry Bliss Bowl</a>
+                    <a class="dropdown-item" href="#tropical" style="font-family: 'Poppins';">Tropical Paradise Bowl</a>
+                    <a class="dropdown-item" href="#banana" style="font-family: 'Poppins';">Banana Boost Bowl</a>
+                    <a class="dropdown-item" href="#mango" style="font-family: 'Poppins';">Mango Magic Bowl</a>
+                    <a class="dropdown-item" href="#cacao" style="font-family: 'Poppins';">Cacao Dream Bowl</a>
+                    <a class="dropdown-item" href="#sunshine" style="font-family: 'Poppins';">Sunshine Citrus Bowl</a>
+
+                </div>
+              </li> 
+            </ul>
+              <h1 class="logo mx-auto">FRESHBOWL</h1>
+                <button class="btn btn-outline-success me-1 rounded-pill" type="button" style="padding: 0.5rem 1.5rem; border-radius: 12px; font-family:'Poppins';">Contact</button>
+                <a class="nav-link position-relative d-inline-flex align-items-center justify-content-center rounded-circle mx-4 rounded-pill" href="#" 
+                style="width: 40px; height: 40px; background-color: black; display: flex; justify-content: center; align-items: center;">
+                 <i class='bx bx-bell text-white' style="font-size: 20px;"></i>
+             </a>
+           </ul>
+          </div>
+        </div>
+      </nav>
+
+       <!--Explore Menu-->
+    <div class="container-fluid px-4" style="background-color: #daf0dd;">
+        <div class="card position-relative mx-auto" style="border: none; width: 950px; border-radius:40px; overflow:hidden;" id="exploreHome">
+            <img src="images/Acai bowl.jpg" class="card-img" alt="Image" style="height: 500px; object-fit: cover;">
+            <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <h1 class="display-4 text-light fw-bold mb-4">Fuel Your Body With Healthy Choices</h1>
+                <br>
+                <a href="#menuSection" class="btn btn-light rounded-pill text-white" style="width: 200px; background-color: #7aeb42; border: none; text-align: center; font-family: 'Poppins';">Explore the menu</a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--Carousel with Green card (Menu Area)-->
+    <div class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5 mb-4">
+                <!--Craousel-->
+      <div class="card mx-auto" style="width: 400px; border-radius:30px; overflow:hidden;">
+        <div id="smallCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <img src="images/revital.jpg" class="d-block w-100" alt="Image 1" style="height: 400px; object-fit: cover;">
+                    <div class="carousel-item-title">
+                        <h3 class="text-center text-light mx-4">Revitalize Your Day</h3>
+                    </div>
+                    <div class="carousel-caption  d-none d-md-block">
+                        <h5 class="text-light bg-opacity-50 p-2 rounded">Our detox smoothies are crafted with ingredients that help cleanse and revitalize, giving you a fresh boost anytime.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bowl.jpg" class="d-block w-100" alt="Image 2" style="height: 400px; object-fit: cover;">
+                    <div class="carousel-item-title">
+                        <h3 class="text-center text-light">Indulge Without the Guilt</h3>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-light bg-opacity-50 p-2 rounded">Satisfy your sweet cravings with our rich and creamy smoothie bowls, made with 100% natural and wholesome ingredients.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/supercharge.jpg" class="d-block w-100" alt="Image 3" style="height: 400px; object-fit: cover;">
+                    <div class="carousel-item-title">
+                        <h3 class="text-center text-light">Supercharge Your Day</h3>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-light bg-opacity-50 p-2 rounded">Packed with nutrient-rich superfoods, our power bowls are designed to fuel your body and keep you energized all day long.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/freshness.jpg" class="d-block w-100" alt="Image 4" style="height: 400px; object-fit: cover;">
+                    <div class="carousel-item-title">
+                        <h3 class="text-center text-light">Bursting with Freshness</h3>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-light bg-opacity-50 p-2 rounded">Experience the pure taste of nature with our freshly blended fruit smoothies. Perfect for a refreshing start to your day!</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#smallCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#smallCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+       </div>
+               <!--Green card-->
+                    <div class="col-md-6 col-lg-5 mb-4">
+                        <div class="card mx-auto position-relative" style="width: 400px; border-radius: 30px; overflow: hidden;">
+                            <img src="images/background.jpg" class="card-img" alt="Card Image" style="height: 400px; object-fit: cover;">
+                            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-start p-4">
+                                <h3 class="text-light fw-bold" style="font-size: 2rem;">Fuel Your Day with Fresh, Delicious Smoothie Bowls!</h3>
+                                <br>
+                                <p class="text-light" style="font-size: 0.8rem;">Experience the perfect blend of flavor and nutrition with our customizable smoothie bowls. Choose from a variety of fresh ingredients to create your ideal bowl — made just for you and delivered right to your door. Healthy, delicious, and convenient!</p>
+                                <a href="#" class="btn btn-light rounded-pill text-white" style="width: 200px; background-color: #7aeb42; border: none; text-align: center; font-family: 'Poppins';">Get 10% of this week</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <!--Row ending-->
+            </div>
+                </div>
+   
+    <br>
+
+    <!--Healthy Menu Area-->
+    <!--Heading-->
+    <div class="container-fluid px-5">
+    <div class="row align-items-center mb-4">
+        <div class="col-5" id="menuSection">
+            <h2 class="menu-title">Our Healthy Menus</h2>
+        </div>
+        <div class="col-4">
+            <hr class="custom-hr">
+        </div>     
+        <div class="col-3 text-end">
+            <i class='bx bxs-left-arrow-circle arrow-icon'></i>
+            <i class='bx bxs-right-arrow-circle arrow-icon ms-2'></i>
+        </div>
+       
+    </div>
+
+    <!--Shopping area-->
+        <div class="row justify-content-center">
+            <!-- Column 1 Item 1-->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="border-radius: 30px; padding: 20px;">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <img src="images/Berry bliss.jpg" alt="berryCard" class="centered-img">
+                        <br>
+                        <a class="btn btn-success d-flex justify-content-between align-items-center" href="#" style="width: 300px; height: 70px; text-align: left; border-radius: 10px; display: inline-block; color: white; font-family: 'Poppins';border: none; background-color: #7aeb42; padding-left: 10px; padding-right: 10px;">
+                            <div class="d-flex flex-column">
+                                <span>Berry Bliss Bowl</span>
+                                <span>$9.99</span>
+                            </div>
+                            <i class="bx bx-cart" style="font-size: 20px; color: white;"></i>
+                        </a>                                              
+                    </div>
+                </div>
+            </div>
+            
+                        
+            <!-- Column 2 Item 1-->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="border-radius: 30px; padding: 20px;">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <img src="images/DetoxFuel.jpg" alt="detoxCard" class="centered-img">
+                        <br>
+                        <a class="btn btn-success d-flex justify-content-between align-items-center" href="#" style="width: 300px; height: 70px; text-align: left; border-radius: 10px; display: inline-block; color: white; font-family: 'Poppins'; border: none; background-color: #7aeb42; padding-left: 10px; padding-right: 10px;">
+                            <div class="d-flex flex-column">
+                                <span>Detox Fuel Bowl</span>
+                                <span>$11.99</span>
+                            </div>
+                            <i class="bx bx-cart" style="font-size: 20px; color: white;"></i>
+                        </a>                                              
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Column 3 Item 1-->
+            <div class="col-md-4 mb-4">
+                <div class="card" style="border-radius: 30px; padding: 20px;">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <img src="images/Cacao.jpg" alt="cacaoCard" class="centered-img">
+                        <br>
+                        <a class="btn btn-success d-flex justify-content-between align-items-center" href="#" style="width: 300px; height: 70px; text-align: left; border-radius: 10px; display: inline-block; color: white; font-family: 'Poppins'; border: none; background-color: #7aeb42; padding-left: 10px; padding-right: 10px;">
+                            <div class="d-flex flex-column">
+                                <span>Cacao Dream Bowl</span>
+                                <span>$13.49</span>
+                            </div>
+                            <i class="bx bx-cart" style="font-size: 20px; color: white;"></i>
+                        </a>                                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ <!--Order Area-->
+ <div class="container-fluid px-4">
+    <div class="card position-relative mx-auto" style="border: none; width:800px; border-radius:40px; overflow:hidden;">
+        <img src="images/details.jpg" class="card-img" alt="Image" style="height: 500px; object-fit: cover;">
+        <div class="card-img-overlay d-flex flex-column justify-content-start align-items-start" style="padding-top: 1.5rem; padding-left: 2rem;">
+            <h3 class="text-light fw-bold" style="font-size: 2.5rem;">Your Wellness.</h3>
+            <h3 class="text-light fw-bold" style="font-size: 2.5rem;">Our Passion.</h3>
+        </div>
+        <div class="position-absolute" style="bottom: 1.5rem; left: 1.5rem; background-color: rgba(255, 255, 255, 0.5); border-radius: 12px; padding: 1rem 1.5rem; width: auto;">
+            <p class="mb-0 fw-bold text-white custom-font">Golden Superfruit Delight Bowl</p>
+            <a href="#" class="btn text-white rounded-pill border black custom-btn" style="width:130px; border:none; text-align: center; background-color: transparent; font-family: 'Poppins';">Order Now</a>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!--Best categories Area-->
+<!--Category navigation panel-->
+<div class="container-fluid px-4" style="background-color: #daf0dd;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #daf0dd;">
+    <div class="container-fluid" id="recipes">
+      <a class="navbar-brand" href="#" style="font-weight: bold; font-size:2rem;">Best Categories
+        We Have</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a class="nav-link btn btn-primary rounded-pill custom-btn" href="#" style="padding: 0.5rem 1.5rem; border-radius: 12px;">Low Sugar</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link btn btn-primary rounded-pill custom-btn" href="#" style="padding: 0.5rem 1.5rem; border-radius: 12px;">Protein</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link btn btn-primary rounded-pill custom-btn" href="#" style="padding: 0.5rem 1.5rem; border-radius: 12px;">Classic</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link btn btn-primary rounded-pill custom-btn" href="#" style="padding: 0.5rem 1.5rem; border-radius: 12px;">Green</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Food cards-->
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <!-- Column 1 Item 1--> 
+        <div class="col-md-4 mb-4">
+            <div class="card" style="border-radius: 30px;" id="berry">
+                <img src="images/Berry bliss.jpg" class="card-img-top card-img-fixed" alt="berryCard">
+                <div class="card-body">
+                    <h5 class="card-title">Berry Bliss Bowl</h5>
+                    <p class="card-text">A sweet blend of acai, strawberries, blueberries, and banana, topped with granola and chia seeds for the perfect crunch.</p>
+                    <button class="btn btn-light rounded-pill text-white viewRecipeButton" data-id="67315f872624ee4558448885" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">See Recipe</button>
+             <!--Recipe view-->
+             <div class="recipeDetails d-none">
+                <p class="recipeIngredients"></p>
+                <p class="recipeInstructions"></p>
+                <button class="btn btn-light rounded-pill text-white hideButton" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">Hide</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+
+
+        <!-- Column 2 Item 1-->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="border-radius: 30px;" id="tropical">
+                <img src="images/R1C2.jpg" class="card-img-top card-img-fixed" alt="tropicalCard">
+                <div class="card-body">
+                    <h5 class="card-title">Tropical Paradise Bowl</h5>
+                    <p class="card-text">A refreshing mix of mango, pineapple, and coconut topped with kiwi, coconut flakes, and a drizzle of honey.</p>
+                    <button class="btn btn-light rounded-pill text-white viewRecipeButton" data-id="673184d29aa64240f15f9ce8" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">See Recipe</button>
+             <!--Recipe view-->
+             <div class="recipeDetails d-none">
+                <p class="recipeIngredients"></p>
+                <p class="recipeInstructions"></p>
+                <button class="btn btn-light rounded-pill text-white hideButton" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">Hide</button>
+            </div>
+            </div>
+            </div>
+        </div>
+    
+
+        <!-- Column 3 Item 1-->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="border-radius: 30px;" id="banana">
+                <img src="images/R1C3.jpg" class="card-img-top card-img-fixed" alt="bananaCard">
+                <div class="card-body">
+                    <h5 class="card-title">Banana Boost Bowl</h5>
+                    <p class="card-text">Creamy banana base blended with almond butter and oats, topped with sliced bananas, cacao nibs, and walnuts.</p>
+                    <button class="btn btn-light rounded-pill text-white viewRecipeButton" data-id="673187a39aa64240f15f9ceb" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">See Recipe</button>
+             <!--Recipe view-->
+             <div class="recipeDetails d-none">
+                <p class="recipeIngredients"></p>
+                <p class="recipeInstructions"></p>
+                <button class="btn btn-light rounded-pill text-white hideButton" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">Hide</button>
+            </div>
+            </div>
+            </div>
+        </div>
+
+    <div class="row justify-content-center">
+
+
+        <!-- Column 1 Item 2-->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="border-radius: 30px;" id="mango">
+                <img src="images/R2C1.jpg" class="card-img-top card-img-fixed" alt="MangoCard">
+                <div class="card-body">
+                    <h5 class="card-title">Mango Magic Bowl</h5>
+                    <p class="card-text"> A vibrant mango and passionfruit blend topped with fresh papaya, coconut shavings, and chia seeds for a tropical escape.</p>
+                    <button class="btn btn-light rounded-pill text-white viewRecipeButton" data-id="673185d29aa64240f15f9ce9" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">See Recipe</button>
+             <!--Recipe view-->
+             <div class="recipeDetails d-none">
+                <p class="recipeIngredients"></p>
+                <p class="recipeInstructions"></p>
+                <button class="btn btn-light rounded-pill text-white hideButton" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">Hide</button>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+
+        <!-- Column 2 Item 2-->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="border-radius: 30px;" id="cacao">
+                <img src="images/R2C2.jpg" class="card-img-top card-img-fixed" alt="cacaoCard">
+                <div class="card-body">
+                    <h5 class="card-title">Cacao Dream Bowl</h5>
+                    <p class="card-text"> A rich cacao smoothie base with banana and almond milk, topped with granola, almond slices, and dark chocolate chunks.</p>
+                    <button class="btn btn-light rounded-pill text-white viewRecipeButton" data-id="6731868d9aa64240f15f9cea" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">See Recipe</button>
+             <!--Recipe view-->
+             <div class="recipeDetails d-none">
+                <p class="recipeIngredients"></p>
+                <p class="recipeInstructions"></p>
+                <button class="btn btn-light rounded-pill text-white hideButton" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">Hide</button>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Column 3 Item 2-->
+        <div class="col-md-4 mb-4">
+            <div class="card" style="border-radius: 30px;" id="sunshine">
+                <img src="images/R2C3.jpg" class="card-img-top card-img-fixed" alt="MangoCard">
+                <div class="card-body">
+                    <h5 class="card-title">Sunshine Citrus Bowl</h5>
+                    <p class="card-text"> A zesty citrus blend of oranges, pineapple, and banana, topped with crunchy granola, shredded coconut, and hemp seeds.</p>
+                    <button class="btn btn-light rounded-pill text-white viewRecipeButton" data-id="6731884a9aa64240f15f9cec" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">See Recipe</button>
+             <!--Recipe view-->
+             <div class="recipeDetails d-none">
+                <p class="recipeIngredients"></p>
+                <p class="recipeInstructions"></p>
+                <button class="btn btn-light rounded-pill text-white hideButton" style="width: 150px; background-color: #31ab13; border: none; text-align: center;">Hide</button>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+
+ <!-- Carousel with Green Card (Ending Area) -->
+<div class="container my-2">
+    <div class="row justify-content-center">
+        <!-- Green Card -->
+        <div class="col-md-6 col-lg-5 mb-4">
+            <div class="card mx-auto position-relative" style="width: 100%; max-width: 400px; border-radius: 30px; overflow: hidden;">
+                <img src="images/background.jpg" class="card-img" alt="Card Image" style="height: 400px; object-fit: cover;">
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-start p-4">
+                    <h3 class="text-light fw-bold" style="font-size: 2rem;">Fuel Your Body With Nutrient-Rich
+                        Bowls</h3>
+                    <br>
+                    <p class="text-light" style="font-size: 1rem;">Discover a variety of bowls packed with superfoods, fresh fruits, and healthy toppings that nourish your body and boost your energy.</p>
+                    <a href="#" class="btn btn-light rounded-pill text-white" style="width: 200px; background-color: #7aeb42; border: none; text-align: center;">View our menu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="col-md-6 col-lg-5 mb-4">
+            <div class="card mx-auto" style="width: 100%; max-width: 400px; border-radius: 30px; overflow: hidden;">
+                <div id="smallCarousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Protein.jpg" class="d-block w-100" alt="Image 5" style="height: 400px; object-fit: cover;">
+                            <div class="carousel-item-title">
+                                <h3 class="text-center text-light">Protein Power Bowl</h3>
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-light bg-opacity-50 p-2 rounded">Peanut butter, banana, and chia seeds make this bowl a protein-packed option, ideal for post-workout recovery.</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/berry boost.jpg" class="d-block w-100" alt="Image 6" style="height: 400px; object-fit: cover;">
+                            <div class="carousel-item-title">
+                                <h3 class="text-center text-light">Berry Boost Bowl</h3>
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-light bg-opacity-50 p-2 rounded">Acai, blueberries, and strawberries bring a powerful dose of antioxidants to support immunity.</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sunrise.jpg" class="d-block w-100" alt="Image 7" style="height: 400px; object-fit: cover;">
+                            <div class="carousel-item-title">
+                                <h3 class="text-center text-light">Tropical Sunrise Bowl</h3>
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-light bg-opacity-50 p-2 rounded">A tropical blend of mango and pineapple, rich in vitamin C and perfect for an energizing start.</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/energy.jpg" class="d-block w-100" alt="Image 8" style="height: 400px; object-fit: cover;">
+                            <div class="carousel-item-title">
+                                <h3 class="text-center text-light">Green Energy Bowl</h3>
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-light bg-opacity-50 p-2 rounded">Spinach, kale, and avocado for a refreshing, vitamin-rich boost packed with antioxidants.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#smallCarousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#smallCarousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Safenax Details Area-->
+<div class="container-fluid" style="background-color: #daf0dd;">
+    <div class="container d-flex justify-content-center">
+        <div class="card position-relative mt-4 mb-4" style="border: none; width: 950px; border-radius: 40px; overflow: hidden;" id="aboutDetails">
+            <img src="images/Gradient.jpg" class="card-img" alt="Image" style="height: 300px; object-fit: cover;">
+            <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <div class="row">
+                    <div class="col-7">
+                        <h3 class="mx-5" id="freshbowl">FRESHBOWL</h3>
+                        <p class="mx-5 mb-0 text-white">Freshbowl</p>
+                        <p class="mx-5 mb-0 text-white">456 Orchard Street,</p>
+                        <p class="mx-5 mb-0 text-white">Greenwood,</p>
+                        <a id="Fb" href="#" class="btn btn-outline-light rounded-pill me-2 mx-5" style="border-radius: 50%; padding: 10px; font-family: 'Poppins';">
+                            Facebook
+                        </a>
+                        <a id="In" href="#" class="btn btn-outline-light rounded-pill me-2" style="border-radius: 50%; padding: 10px; font-family: 'Poppins'">
+                            Instagram
+                        </a>
+                        <a id="Tw" href="#" class="btn btn-outline-light rounded-pill me-2" style="border-radius: 50%; padding: 10px;font-family: 'Poppins'">
+                            Twitter
+                        </a>
+                        <a id="Yt" href="#" class="btn btn-outline-light rounded-pill me-2" style="border-radius: 50%; padding: 10px;font-family: 'Poppins'">
+                            Youtube
+                        </a>
+                    </div>
+                    <div class="col-5 d-flex align-items-center justify-content-end">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-6 d-flex align-items-center">   
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                          <a class="nav-link active text-white" href="#" style="font-family: 'Poppins';">Help</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-white" href="#" style="font-family: 'Poppins';">Shop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-white" href="#" style="font-family: 'Poppins';">Support</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-white" href="#" style="font-family: 'Poppins';">Policies</a>
+                                        </li>
+                                      </ul>
+                                </div>
+
+                                <div class="col-6 d-flex align-items-center">   
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                          <a class="nav-link active text-white" href="#exploreHome" style="font-family: 'Poppins';">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-white" href="#menuSection" style="font-family: 'Poppins';">Menu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-white" href="#aboutDetails" style="font-family: 'Poppins';">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link text-white" href="#recipes" style="font-family: 'Poppins';">Recepies</a>
+                                        </li>
+                                      </ul>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <hr style="height: 3px; background-color: white;"> 
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-2 d-flex align-items-center mx-4">
+                            <img src="images/safenax_logo.png" class="d-block" alt="Safenax" style="height: 20px; width: auto; object-fit: cover;">
+                        </div>
+                        <div class="col-9 d-flex align-items-center justify-content-end">
+                            <p class="text-white mb-0" style="font-size: 1rem; font-family: 'Poppins';">Safenax (Pvt) Ltd 2024 | This site is a demo project for testing purposes only.</p>  
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
